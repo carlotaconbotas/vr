@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="utf-8"> 
+  </head>
+  <style>
+     #modelViewer{
+     height:500px; width:500px;} 
+    </style>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer id="modelViewer"
+                          src="src/Astronaut.glb"
+    ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+    alt="A 3D model of an astronaut"
+                          poster="src/poster.png"
+                          camera-controls
+                          camera-orbit="65deg 55deg 2.5m"
+                          ar
+                          auto-rotate
+                          camera-controls> 
+    </model-viewer>  
+    <!-- Loads <model-viewer> for browsers: -->
+    <script 
+    type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"> 
+    </script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    </script>
+  </body>
+</html>
